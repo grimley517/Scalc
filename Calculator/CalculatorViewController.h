@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalculatorModel.h"
 
-@interface CalculatorViewController : UIViewController
-
+@interface CalculatorViewController : UIViewController{
+    IBOutlet UILabel *display;
+    CalculatorModel *brain;
+    BOOL userIsTyping;
+}
+- (IBAction)DigitPressed:(UIButton *)sender;
+- (IBAction)OperatorPressed:(UIButton *)sender;
 @end
