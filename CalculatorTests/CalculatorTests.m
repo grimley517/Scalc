@@ -3,7 +3,7 @@
 //  CalculatorTests
 //
 //  Created by Brian Jones on 9/10/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011, 2012, 2013 All rights reserved.
 //
 
 #import "CalculatorTests.h"
@@ -50,6 +50,14 @@
     double result = [Calc performOperation:@"+/-"];//result should be returned when the equal sign pressed
     double expected = -1;
     XCTAssertEqual(expected, result , @"Expected is negative 1");
+}
+-(void)test4
+{
+    //simple division test 1/0 = error  not too different from test 2, but an error should arise and be handled gracefully
+    [Calc setOperand:1];//simulates pressing the 1 button
+    [Calc performOperation:@"/"]; //simulates pressing the + button
+    XCTAssertThrows([Calc setOperand:0]); //simulates pressing the 0 button, this should throw the wobbly exception
+
 }
 
 @end
