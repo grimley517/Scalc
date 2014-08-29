@@ -24,6 +24,8 @@
 		6CE41033144166330062673A /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE41032144166330062673A /* CalculatorTests.m */; };
 		6CE4103E144167090062673A /* CalculatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4103D144167090062673A /* CalculatorModel.m */; };
 		6CE4103F144167090062673A /* CalculatorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CE4103D144167090062673A /* CalculatorModel.m */; };
+		6CE83D7F19B0A4230091AC2B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CE83D7E19B098A50091AC2B /* Default-568h@2x.png */; };
+		6CE83D8319B0A57F0091AC2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CE83D8219B0A57F0091AC2B /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +49,8 @@
 		6CE41010144166300062673A /* Calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calculator-Prefix.pch"; sourceTree = "<group>"; };
 		6CE41011144166300062673A /* CalculatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorAppDelegate.h; sourceTree = "<group>"; };
 		6CE41012144166300062673A /* CalculatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorAppDelegate.m; sourceTree = "<group>"; };
-		6CE41015144166300062673A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		6CE41017144166300062673A /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		6CE41018144166300062673A /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
-		6CE4101B144166300062673A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CalculatorViewController.xib; sourceTree = "<group>"; };
 		6CE41022144166320062673A /* CalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE4102C144166330062673A /* CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		6CE4102E144166330062673A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -59,6 +59,10 @@
 		6CE4103C144167090062673A /* CalculatorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorModel.h; sourceTree = "<group>"; };
 		6CE4103D144167090062673A /* CalculatorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorModel.m; sourceTree = "<group>"; };
 		6CE83D7E19B098A50091AC2B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6CE83D8019B0A54F0091AC2B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		6CE83D8219B0A57F0091AC2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6CE83D8419B0A5D00091AC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		6CE83D8519B0A5D00091AC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CalculatorViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		6CE410011441662F0062673A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6CE83D8019B0A54F0091AC2B /* SenTestingKit.framework */,
 				6CE410021441662F0062673A /* UIKit.framework */,
 				6CE41004144166300062673A /* Foundation.framework */,
 				6CE41006144166300062673A /* CoreGraphics.framework */,
@@ -126,6 +131,7 @@
 				6CE4101A144166300062673A /* CalculatorViewController.xib */,
 				6CE4103C144167090062673A /* CalculatorModel.h */,
 				6CE4103D144167090062673A /* CalculatorModel.m */,
+				6CE83D8219B0A57F0091AC2B /* Images.xcassets */,
 				6CE41009144166300062673A /* Supporting Files */,
 			);
 			path = Calculator;
@@ -215,6 +221,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 6CE40FF31441662D0062673A;
 			productRefGroup = 6CE40FFF1441662F0062673A /* Products */;
@@ -233,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CE4100D144166300062673A /* InfoPlist.strings in Resources */,
+				6CE83D8319B0A57F0091AC2B /* Images.xcassets in Resources */,
+				6CE83D7F19B0A4230091AC2B /* Default-568h@2x.png in Resources */,
 				6CE41016144166300062673A /* MainWindow.xib in Resources */,
 				6CE4101C144166300062673A /* CalculatorViewController.xib in Resources */,
 			);
@@ -308,7 +317,7 @@
 		6CE41014144166300062673A /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6CE41015144166300062673A /* en */,
+				6CE83D8419B0A5D00091AC2B /* Base */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";
@@ -316,7 +325,7 @@
 		6CE4101A144166300062673A /* CalculatorViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6CE4101B144166300062673A /* en */,
+				6CE83D8519B0A5D00091AC2B /* Base */,
 			);
 			name = CalculatorViewController.xib;
 			sourceTree = "<group>";
@@ -351,7 +360,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -371,7 +380,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = NO;
@@ -381,6 +390,12 @@
 		6CE41037144166330062673A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -395,6 +410,12 @@
 		6CE41038144166330062673A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -450,7 +471,7 @@
 				6CE41035144166330062673A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		6CE41036144166330062673A /* Build configuration list for PBXNativeTarget "Calculator" */ = {
 			isa = XCConfigurationList;
@@ -459,7 +480,7 @@
 				6CE41038144166330062673A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		6CE41039144166330062673A /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -468,7 +489,7 @@
 				6CE4103B144166330062673A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
