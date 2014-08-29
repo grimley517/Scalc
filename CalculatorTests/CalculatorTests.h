@@ -6,8 +6,11 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
+#import "CalculatorModel.h"
 
-@interface CalculatorTests : SenTestCase
-
+@interface CalculatorTests : XCTestCase
+{
+    CalculatorModel* Calc;
+}
 @end
