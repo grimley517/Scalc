@@ -1,4 +1,4 @@
 Scalc
 =====
 
-Stanford Calculator
+Simple Calculator, based on early Stanford app course.
