@@ -24,7 +24,7 @@
     else if ([@"^" isEqual:waitingOperation]){
         operand = pow(waitingOperand,  operand);
     }
-    else if ([@"÷" isEqual:waitingOperation]) {
+    else if ([@"/" isEqual:waitingOperation]) {
         if (operand) {
             operand = waitingOperand / operand;
         } 
